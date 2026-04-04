@@ -53,8 +53,12 @@
 /* ═══ RESET ═══ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{font-family:'Syne',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;cursor:none;transition:background .4s,color .4s}
+body{font-family:'Syne',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;cursor:auto;transition:background .4s,color .4s}
 a{text-decoration:none;color:inherit}
+a {
+  pointer-events: auto;
+  cursor: pointer;
+}
 
 /* ═══ CURSOR ═══ */
 #cd,#cr{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
@@ -452,7 +456,7 @@ footer p{font-family:'Fira Code',monospace;font-size:.68rem;color:var(--muted)}
         <div class="ptit">Smart Email Assistant</div>
         <div class="pstack">Spring Boot · Gemini API · Chrome Extension · REST APIs</div>
         <p class="pdesc">Agentic email assistant with a Chrome extension + Spring Boot backend. Integrates Gemini Pro API to auto-generate context-aware Gmail replies in user-defined tones. Engineered REST endpoints for prompt construction, LLM invocation, and response post-processing — reducing email response time by 50%.</p>
-        <a href="https://github.com/kunal3229/Smart-Email-Assistant" target="_blank" class="plink">View Project ↗</a>
+        <a href="https://github.com/kunal3229/Smart-Email-Assistant" target="_blank" rel="noopener noreferrer" class="plink">View Project ↗</a>
       </div>
 
       <div class="pc rv">
@@ -461,7 +465,7 @@ footer p{font-family:'Fira Code',monospace;font-size:.68rem;color:var(--muted)}
         <div class="ptit">Book Social Network</div>
         <div class="pstack">Spring Boot · JWT · Docker · Spring Security · OpenAPI</div>
         <p class="pdesc">RESTful backend with Spring Boot implementing JWT authentication and role-based access control. Relational schemas with Spring Data JPA for efficient CRUD. Integrated OpenAPI/Swagger for documentation and Docker for containerization and deployment.</p>
-        <a href="https://github.com/kunal3229/BSN" target="_blank" class="plink">View Project ↗</a>
+        <a href="https://github.com/kunal3229/BSN" target="_blank" rel="noopener noreferrer" class="plink">View Project ↗</a>
       </div>
 
       <div class="pc rv">
@@ -479,7 +483,7 @@ footer p{font-family:'Fira Code',monospace;font-size:.68rem;color:var(--muted)}
         <div class="ptit">FAAH</div>
         <div class="pstack">Java · Spring Boot</div>
         <p class="pdesc">A developer productivity tool born from real frustration — a humorous but functional utility that makes developer workflows just a little less painful. Because the best tools always come from genuine pain points.</p>
-        <a href="https://github.com/kunal3229/faah" target="_blank" class="plink">View Project ↗</a>
+        <a href="https://github.com/kunal3229/faah" target="_blank" rel="noopener noreferrer" class="plink">View Project ↗</a>
       </div>
 
     </div>
